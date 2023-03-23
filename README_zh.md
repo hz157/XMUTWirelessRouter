@@ -4,7 +4,7 @@
 
 > 使用[openwrt-lede](https://github.com/coolsnowwolf/lede)和[mentohust](https://github.com/tkkcc/mentohust)开发。
 
-使用该方法需要具有一些的计算机方面的知识以及一定的动手能力。
+使用该方法你需要具有一些计算机方面的知识以及一定的动手能力。
 
 ## 下载
 - [python 源代码](https://github.com/hz157/XMUTWirelessRouter/tree/python)
