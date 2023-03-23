@@ -1,4 +1,5 @@
 # openwrt 编译
+<p align="left">🇨🇳 中文简体  |  <a title="English" href="doc/compilation.md">🇬🇧 English</a></p>
 
 ## 操作步骤
 1. clone openwrt 到本地
@@ -22,4 +23,4 @@ make V=99
 
 ## 常见问题
 1. 编译速度特别慢
-> 解决方案参考 [doc\slow_compilation_zh.md](doc\slow_compilation_zh.md)
+> 解决方案参考 [doc\slow_compilation_zh.md](doc/slow_compilation_zh.md)
