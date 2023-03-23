@@ -2,7 +2,7 @@
 <p align="left">🇬🇧 English  |  <a title="English" href="README_zh.md">🇨🇳 中文简体</a></p>
 
 > Development with [openwrt-lede](https://github.com/coolsnowwolf/lede) and [mentohust](https://github.com/tkkcc/mentohust)
-
+To use this method you need to have some computer knowledge and some hands-on skills.
 
 ## Download
 - [python source code](https://github.com/hz157/XMUTWirelessRouter/tree/python)
