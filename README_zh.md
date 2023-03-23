@@ -7,7 +7,6 @@
 使用该方法需要具有一些的计算机方面的知识以及一定的动手能力。
 
 ## 下载
-- [可执行文件](#)
 - [python 源代码](https://github.com/hz157/XMUTWirelessRouter/tree/python)
 - [shell_script (ifname)](https://github.com/hz157/XMUTWirelessRouter/blob/script/script/shell_ifname.sh)
 - [shell_script (device)](https://github.com/hz157/XMUTWirelessRouter/blob/script/script/shell_device.sh)
