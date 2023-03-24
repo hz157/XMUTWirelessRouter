@@ -2,7 +2,7 @@
 <p align="left">🇨🇳 中文简体  |  <a title="English" href="README.md">🇬🇧 English</a></p>
 
 
-> 使用[openwrt-lede](https://github.com/coolsnowwolf/lede)和[mentohust](https://github.com/tkkcc/mentohust)开发。
+> 使用[openwrt-lede](https://github.com/coolsnowwolf/lede)和[mentoHUST](https://code.google.com/archive/p/mentohust/)开发。
 
 使用该方法你需要具有一些计算机方面的知识以及一定的动手能力。
 
