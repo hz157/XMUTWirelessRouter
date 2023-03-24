@@ -6,6 +6,7 @@
 To use this method you need to have some computer knowledge and some hands-on skills.
 
 ## Download
+- [Windows exe](https://github.com/hz157/XMUTWirelessRouter/releases/tag/windows)
 - [python source code](https://github.com/hz157/XMUTWirelessRouter/tree/python)
 - [shell_script (ifname)](https://github.com/hz157/XMUTWirelessRouter/blob/script/script/shell_ifname.sh)
 - [shell_script (device)](https://github.com/hz157/XMUTWirelessRouter/blob/script/script/shell_device.sh)
