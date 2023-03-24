@@ -1,7 +1,7 @@
 # XMUT Wireless Router
 <p align="left">🇬🇧 English  |  <a title="English" href="README_zh.md">🇨🇳 中文简体</a></p>
 
-> Development with [openwrt-lede](https://github.com/coolsnowwolf/lede) and [mentohust](https://github.com/tkkcc/mentohust)
+> Development with [openwrt-lede](https://github.com/coolsnowwolf/lede) and [mentoHUST](https://code.google.com/archive/p/mentohust/)
 
 To use this method you need to have some computer knowledge and some hands-on skills.
 
