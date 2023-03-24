@@ -188,6 +188,7 @@ def upload():
             username = config['username'],
             password = config['password']
         )
+        stdin,stdout,stderr = ssh.exec_command('chmod a+x /bin/mentohust') 
         scp = SCPClient(ssh.get_transport())
         scp.put(mentohust_path, recursive=True, remote_path='/bin/mentohust')
         scp.close()
