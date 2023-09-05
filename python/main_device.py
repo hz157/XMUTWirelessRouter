@@ -8,10 +8,12 @@ remarks: 网卡采用device声明的版本
 
 import paramiko
 import random
+import os
 from scp import SCPClient
 
+# Router Params Info
 config = {
-      'host': '192.168.1.1',
+      'host': '192.168.99.1',
       'port': 22,
       'username': 'root',
       'password': 'password'
@@ -59,6 +61,8 @@ def setInfo():
     if len(flag) == 1:
         if str.lower(flag) == "y":
             SSID_5G['SSID'] = input("请输入5GHz无线网络名称(不建议使用中文): ")
+            while SSID_5G['SSID'] == SSID_2G['SSID']:
+                SSID_5G['SSID'] = input("5GHz无线网络名称与2.4G相同，请重新输入(不建议使用中文): ")
             SSID_5G['password'] = input("请输入5GHz无线网络密码: ")
             while len(SSID_5G["password"]) < 8:
                 SSID_5G["password"] = input("请重新输入5GHz无线网络密码(不可低于8位字符): ")
@@ -172,8 +176,11 @@ echo "  2.4Ghz: $SSID2G | Password: $PWD2G"
 echo "  5Ghz: $SSID5G | Password: $PWD2G"
 echo "----------------------------------------------------------"
         """
-    
-    with open('files/ConfigurationScripts.sh',"w",encoding="utf-8") as f:
+    # 判断文件是否存在
+    # if not os.path.exists(r'files/ConfigurationScripts.sh'):
+    #     os.mknod(r'files/ConfigurationScripts.sh')  # 创建文件
+    # 写入脚本
+    with open(os.path.join(os.getcwd(), 'ConfigurationScripts.sh'), "w",encoding="utf-8") as f:
         f.write(param)
     shell = param
 
@@ -230,13 +237,13 @@ if __name__ == '__main__':
 |  |  ||     ||  |  ||_   _|  | __  | ___  _ _ | |_  ___ 
 |-   -|| | | ||  |  |  | |    |    -|| . || | ||  _|| -_|
 |__|__||_|_|_||_____|  |_|    |__|__||___||___||_|  |___|
-      厦门理工学院 无线路由配置Shell生成器_name: device verison 
     Xiamen University of Technology Wireless Router Configuration Shell
                                                 明理精工，与时偕行
     """)
     setInfo()   # 配置用户信息
     createShell()   # 生成shell文件
-    flag = input('是否需要上传MentoHUST插件(Y/N): ')
+    # flag = input('是否需要上传MentoHUST插件(Y/N): ')
+    flag = "n"
     if str.lower(flag) == "y":
         if upload():
             secureShell()
